@@ -1,0 +1,71 @@
+.about{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.about h1{
+    text-align: center;
+    color: purple;
+}
+.about img{
+    width: 400px;
+    height: 400px;
+}
+.about .about-left{
+    flex: 40%;
+}
+.about .about-right{
+    width: 500px;
+    flex: 50%;  
+}
+.about .aboutdev{
+    margin: 25px;
+    margin-top: 50px;
+    display: flex;
+}
+.about .aboutapp{
+    margin-top: 50px;
+}
+.about .aboutapppara{
+    margin: 25px;
+}
+
+@media(max-width : 1000px){
+    .about img{
+        width: 300px;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 300px;
+        flex: 40%;  
+    }
+}
+
+@media(max-width : 750px){
+    .about img{
+        width: 300px;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 250px;
+        flex: 40%;  
+    }
+}
+
+@media(max-width : 730px){
+    .about .aboutdev{
+        margin: 25px;
+        margin-top: 50px;
+        display: block;
+    }
+    .about .about-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .about-right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;  
+    }
+}

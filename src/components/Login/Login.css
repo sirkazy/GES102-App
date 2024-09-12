@@ -1,0 +1,64 @@
+.login{
+    text-align: center;
+}
+
+.login .loginheader{
+    font-weight: bolder;
+}
+.loginform{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.login form input{
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.login img{
+    width: 170px;
+    height: 100px;
+    margin: 30px 70px;
+    border-radius: 10px;
+}
+
+.loginbutton{
+    background-color: purple;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 315px;
+    padding-left: 10px;
+}
+
+.register{
+    text-align: center;
+    display: flex;
+    margin-left: 170px;
+}
+.login .register .link{
+    color: purple;
+    flex-basis: 40%;
+    font-size: 12px;
+    margin-left: 60px;
+}
+.register p{
+    flex-basis: 80%;
+    font-size: 12px;
+}
+.login .forgotpassword{
+    margin-left: 210px;
+}
+.login .forgotpassword p{
+    line-height: 2px;
+    word-spacing: 2px;
+    font-weight: lighter;
+    font-size: 12px;
+    color: purple;
+}

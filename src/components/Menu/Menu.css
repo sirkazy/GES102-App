@@ -1,0 +1,51 @@
+.menu{
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    
+}
+
+.para{
+    margin-top: 100px;
+}
+
+.menuimage{
+    margin-bottom: 30px;
+}
+.menuimage img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.trivia{
+    margin: 50px;
+    margin-bottom: 50px;
+}
+.menubutton button{
+    width: 130px;
+    height: 35px;
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+}
+
+.menubutton img{
+    width: 20px;
+    height: 10px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+.quizimg img{
+    width: 170px;
+    height: 100px;
+    margin: 30px 70px;
+    border-radius: 10px;
+}
+
+@media(max-width: 390px){
+}

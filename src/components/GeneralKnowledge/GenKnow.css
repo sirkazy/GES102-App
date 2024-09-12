@@ -1,0 +1,35 @@
+.genknow{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+}
+.genknow h2{
+    margin-top: 100px;
+}
+
+.genknow .prev button{
+    margin-top: 150px;
+    width: 100px;
+    height: 35px;
+    background-color: purple; 
+    float: left;
+    color: white;
+    border-radius: 10px;
+} 
+
+.genknow .next button{
+    margin-top: 150px;
+    width: 100px;
+    height: 35px;
+    background-color: purple; 
+    float: right;
+    color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 450px){
+    .genknow h2{
+        margin-top: 200px;
+    }
+}

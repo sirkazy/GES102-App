@@ -1,0 +1,14 @@
+.splashscreen{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: purple;
+}
+.splashscreen img{
+    width: 250px;
+    height: 200px;
+}
+.splashscreen .loading{
+    margin-top: 50px;
+}

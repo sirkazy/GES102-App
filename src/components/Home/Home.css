@@ -1,0 +1,79 @@
+.home{
+    padding-bottom: 60px;
+}
+.hello{
+    display: flex;
+}
+.hello-left img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.hello-right{
+    margin-left: 10px;
+}
+.tophead{
+    background-color: purple;
+}
+.head{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.home .head .topbox{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 25px;
+}
+.home .play, .head .hello p{
+    text-align: center;
+}
+.topbox-left button{
+    background-color: purple;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+.topbox-left{
+    flex: 60%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.topbox-right{
+    flex: 10%;
+}
+.topbox-right img{
+    width: 60px;
+    height: 110px;
+}
+.home .imgslinks{
+    background-color: rgb(228, 213, 194);
+}
+.home .imgslinks img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    margin: 20px;
+    margin-bottom: 0
+}
+.home .imgslinks li{
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.home .imgslinks .first, .home .imgslinks .second{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}

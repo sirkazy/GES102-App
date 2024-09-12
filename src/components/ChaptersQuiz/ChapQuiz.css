@@ -1,0 +1,27 @@
+.chapquiz{
+    padding-bottom: 40px;
+}
+.chaptersofquiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chapquiz h1{
+    color: blueviolet;
+    text-align: center;
+}
+.chapquiz button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    display: block;
+    margin: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}

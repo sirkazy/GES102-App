@@ -1,0 +1,16 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(228, 213, 194);
+    padding-bottom: 60px;
+}
+.App{    
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body .heyhome{
+    height: 100%;
+    background-color: rgb(228, 213, 194);
+}

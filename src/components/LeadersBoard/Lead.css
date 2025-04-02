@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .lead{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: purple;
+    min-height: 100vh;
+}
+.lead h1, .lead h2{
+    font-family: 'Hanken Grotesk';
+}
+
+.dark .lead{
+    background-color: #121212;
 }

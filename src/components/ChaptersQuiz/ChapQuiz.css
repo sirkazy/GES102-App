@@ -1,27 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .chapquiz{
     padding-bottom: 40px;
-}
-.chaptersofquiz{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chaptersofquiz{
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
 }
 .chapquiz h1{
-    color: blueviolet;
+    color: purple;
     text-align: center;
 }
 .chapquiz button{
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: blueviolet;
+    background-color: purple;
     color: white;
     display: block;
-    margin: 15px;
+    margin: 35px;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
+}
+
+@media(max-width:1200px){
+    .chapquiz button{
+        width: 250px;
+        margin: 25px;
+    }
+}
+
+@media(max-width: 900px){
+    .chaptersofquiz{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px){
+    .chapquiz button{
+        width: 200px;
+        margin: 15px;
+    }
+}
+
+@media(max-width: 450px){
+    .chaptersofquiz{
+        display: block;
+    }
 }

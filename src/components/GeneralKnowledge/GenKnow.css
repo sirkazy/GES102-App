@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .genknow{
     text-align: center;
     justify-content: center;
     align-items: center;
     color: purple;
+    display: flex;
+    flex-direction: column;
 }
 .genknow h2{
     margin-top: 100px;
 }
 
 .genknow .prev button{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100px;
     height: 35px;
     background-color: purple; 
@@ -17,9 +20,14 @@
     color: white;
     border-radius: 10px;
 } 
-
+.genknow .prev-next{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
+}
 .genknow .next button{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100px;
     height: 35px;
     background-color: purple; 
@@ -28,8 +36,56 @@
     border-radius: 10px;
 }
 
-@media(max-width: 450px){
-    .genknow h2{
-        margin-top: 200px;
+.genknow-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.genknow-inner-content{
+    width: 70%;
+}
+
+@media(max-width: 950px){
+    .genknow-content{
+        width: 70%;
+        font-size: 14px;
     }
+    .genknow-inner-content{
+        width: 60%;
+    }
+}
+@media(max-width: 700px){
+    .genknow-content{
+        width: 70%;
+        font-size: 15px;
+    }
+    .genknow-inner-content{
+        width: 80%;
+    }
+}
+
+@media(max-width: 500px){
+        .genknow-content{
+            width: 90%;
+            font-size: 8px; 
+            height: 450px;
+        }
+        .genknow-inner-content{
+            width: 90%;
+        }
+        .genknow .prev-next{
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            justify-content: space-between;
+        }
 }

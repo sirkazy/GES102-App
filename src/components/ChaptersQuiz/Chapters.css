@@ -1,41 +1,73 @@
-.chapter1, .chapter2, .chapter3, .chapter4, .chapter5, .chapter6, .chapter7, .chapter8, .chapter9, .chapter10, .chapter11, .chapter12 {    
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+.chapter{    
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
     margin: 10px;
 }
-.chapter1 button, .chapter2 button, .chapter3 button, .chapter4 button, .chapter5 button, .chapter6 button, .chapter7 button, .chapter8 button, .chapter9 button, .chapter10 button, .chapter11 button, .chapter12 button{
+.chapter .options button{
     display: inline-block;
     width: 220px;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
     cursor: pointer;
     margin: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.chapter1 button:hover, .chapter2 button:hover, .chapter3 button:hover, .chapter4 button:hover, .chapter5 button:hover, .chapter6 button:hover, .chapter7 button:hover, .chapter8 button:hover, .chapter9 button:hover, .chapter10 button:hover, .chapter11 button:hover, .chapter12 button:hover{
-    background-color: purple;
-}
-.chapter1 h2, .chapter2 h2, .chapter3 h2, .chapter4 h2, .chapter5 h2, .chapter6 h2, .chapter7 h2, .chapter8 h2, .chapter9 h2, .chapter10 h2, .chapter11 h2, .chapter12 h2{
+.chapter .quizQuestion{
     display: flex;
-    width: 600px;
-    height: 150px;
+    padding: 20px;
+    width: 90%;
+    height: 120px;
     border-radius: 15px;
     background-color: purple;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
 }
-.chapter1 .quizhead , .chapter2 .quizhead, .chapter3 .quizhead, .chapter4 .quizhead, .chapter5 .quizhead, .chapter6 .quizhead, .chapter7 .quizhead, .chapter8 .quizhead, .chapter9  .quizhead, .chapter10, .chapter11 .quizhead, .chapter12 .quizhead{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 35px;
+.chapter .quizoptions{
+    display: flex;
+    gap: 10px;
 }
-.chapter1 .next button, .chapter2 .next button, .chapter3 .next button, .chapter4 .next button, .chapter5 .next button, .chapter6 .next button, .chapter7 .next button, .chapter8 .next button, .chapter9 .next button, .chapter10 .next button, .chapter11 .next button, .chapter12 .next button{
+.chapter .quizoptions .label{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(199, 173, 173);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+.chapter .option-value{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.label input[type="radio"] {
+    margin-right: 10px; 
+    flex-shrink: 0; 
+}
+.label .option-value p{
+    font-size: 14px;
+}
+
+.label .option-value span {
+    min-width: 250px;
+    max-width: max-content;
+    display: inline-block;
+    font-size: 13px;
+}
+.chapter .quizhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.chapter .next button{
     float: right;
     width: 100px;
     height: 35px;
@@ -44,8 +76,9 @@
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    margin-top: 10px;
 }
-.chapter1 .prev button, .chapter2 .prev button, .chapter3 .prev button, .chapter4 .prev button, .chapter5 .prev button, .chapter6 .prev button, .chapter7 .prev button, .chapter8 .prev button, .chapter9 .prev button, .chapter10 .prev button, .chapter11 .prev button, .chapter12 .prev button{
+.chapter .prev button{
     float: left;
     width: 100px;
     height: 35px;
@@ -54,4 +87,151 @@
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    margin-top: 10px;
+    
 }
+
+.chapter .quizoptions .label span{
+    font-size: 13px;
+} 
+
+.alertbuttons-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.chapter .question-navigator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.chapter .question-number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chapter .answered {
+    background-color: #4caf50; 
+    color: white;
+}
+
+.chapter .unanswered {
+    background-color: #808080;
+    color: white;
+}
+
+.chapter .active {
+    border: 2px solid #000;
+}
+.alertbuttons-content{
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+.alertbuttons-overlay button{
+    display: inline;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    background-color: purple;
+    color: white;
+}
+.alertbuttons-overlay .yesno{
+    display: flex;
+    justify-content: space-between;
+}
+.chaptermenu button{
+    width: 200px;
+    height: 30px;
+    background-color: purple;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+@media(max-width: 1000px){
+    .chapter .quizoptions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .chapter .quizoptions .label{
+        width: 300px;
+        height: 40px;
+    }
+    .chapter h2, .chapter h1{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:680px){
+    .chapter .quizQuestion{
+        width: 80%;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:500px){
+    .chapter .quizQuestion{
+        font-size: 20px;
+    }
+    h1,h2{
+        font-size: 25px;
+    }
+    .chapter .quizoptions .label{
+        width: 300px;
+        height: 40px;
+    }
+    .alertbuttons-content{
+        width: 300px;
+    }
+}
+
+@media(max-width:450px){
+    .chapter .quizQuestion{
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:350px){
+    .alertbuttons-content{
+        width: 200px;
+    }
+    .alertbuttons-overlay button{
+        display: inline;
+        width: 80px;
+    }
+    .label .option-value span {
+        font-size: 12px;
+    }
+    .chapter .quizoptions .label{
+        width: 280px;
+        height: 40px;
+    }
+}
+
+
+

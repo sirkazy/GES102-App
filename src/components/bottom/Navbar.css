@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .navbar{
     position: fixed;
     bottom: 0;
@@ -19,14 +20,10 @@
     font-size: 12px;
 }
 .nav-item span{
-    margin-top: 5px;
+    color: purple;
+    font-family: 'Hanken Grotesk';
 }
 .nav-item svg{
-    font-size: 24px;
-}
-.nav-item.active{
-    color: #25d366;
-}
-.nav-item.active svg{
-    color: #25d366;
+    font-size: 20px;
+    color: purple;
 }

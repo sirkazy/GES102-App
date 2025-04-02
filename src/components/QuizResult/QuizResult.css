@@ -1,10 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .quizResult{
     justify-content: center;
     align-items: center;
     text-align: center;
     color: purple;
 }
-.quizResult button{
+.quizResult p, .quizResult h1{
+    font-family: 'Hanken Grotesk';
+}
+.exit-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.exit-content{
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+}
+.quizResult .triggerexit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.quizResult .triggerexit button{
     width: 200px;
     height: 30px;
     border: none;
@@ -12,14 +44,25 @@
     background-color: purple;
     color: white;
 }
-.exit button{
+.exit-overlay button{
+    display: inline;
     width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    background-color: purple;
     color: white;
-    border-radius: 5px;
 }
-.exit .yes button{
-    background-color: green;
+.exit-overlay .yesno{
+    display: flex;
+    justify-content: space-between;
 }
-.exit .no button{
-    background-color: red;
+.trophies p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }

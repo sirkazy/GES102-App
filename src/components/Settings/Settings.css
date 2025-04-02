@@ -1,36 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 .settings{
     justify-content: center;
     align-items: center;
-}
-.settings h2,.settings p, .signout{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.settings img{
-    border-radius: 70px;
-    width: 100px;
-    height: 80px;
-}
-.formstyle{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgb(228, 213, 194);
+    color: black;
+    min-height: 100vh;
 }
-form input{
-    display: block;
-    margin-bottom: 5px;
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
+.dark .settings{
+    background-color: #121212;
+    color: white;
 }
-form label{
-    padding: 0px;
+
+.settings-body{
+    display: flex;
+    flex-direction: column;
 }
-form button{
+
+.settings-body button{
     width: 210px;
-    background-color: blue;
+    background-color: purple;
     color: white;
     height: 25px;
     border-radius: 5px;
+    margin: 30px;
 }

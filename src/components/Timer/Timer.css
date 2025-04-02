@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: purple;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
